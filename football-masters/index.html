@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodbal Masters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./models/materialize.js"></script>
+    <script src="./services/api.js"></script>
+    <script src="./models/leagues.js"></script>
+    <script src="./models/teams.js"></script>
+    <script src="./models/players.js"></script>
+    <script src="./models/favoriteteam.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    
+</head>
+<body id="body">
+
+    <div class="container">
+    <nav>
+        <div class="nav-wrapper green">
+            <a  class="brand-logo center">FootballMasters</a>
+          </div>
+        </nav>
+        <div style="margin: 30px 0px 0px 150px ;">
+            <a class="waves-effect waves-light btn-large modal-trigger orange" href="#modal1">Top Leagues</a>
+            <a class="waves-effect waves-light btn-large red" id="fav-teams-trigger-btn"><i class="material-icons left">cloud</i>Favorite Teams</a>
+
+         </div>
+         <div id="top-ten-teams" style="display: flex; justify-content: space-between;">
+        </div>
+        <div id="favorite-teams" class="col s12 m9 " style=" width: inherit; margin-left: 10%;">
+           <ul class="collapsible popout" id="favorite-teams-collapsible">
+           </ul>
+       </div>
+             
+    <div class="row hide" id="card" >
+       <div class="col s12 m5 left" style="margin-left: 40px;">
+         <div class="card-panel #e6ee9c lime lighten-3 ">
+            <div ><a id="remove-card" class="right" style="cursor: pointer;">x</a></div> 
+           <span class="white-text">
+               <h6  style="color: black;">Your Favorite Players</h6>
+               <div class="row">
+                   <form class="col s12">
+                   <div class="row">
+                   <div class="input-field col s6" id="user-input">
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Name</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="fav-team">
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+      
+<div id="table" class="centered" style= "margin-left: 5%;">
+    <table class="striped" id="teams-table">
+        <thead class="responsive-table">
+            <tr id="teams-table-head">
+            </tr>
+          </thead>
+    <tbody id="table-body">
+    </tbody >
+</div>
+</div>
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div id='favorite-lgs' class="modal-content">
+</div>
+</div>
+
+<div id="players-table" class="row" style= "margin-left: 5%; ">
+<div class="flow-text">
+<table class="striped">
+    <thead>
+        <tr id="players-table-head">
+        </tr>
+ </thead>
+ <tbody id="table-body">
+</tbody >
+</div>
+</div>
+<div>
+<ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+<ul class="collapsible" id="collapsible-leagues"> <ul>   
+</div>
+</body>
+</html>
+
+                  
+
+
+            
+
+
+
+
+
+             
+        
+
+
+
+
+                    
+
+                           
+
+
+
+
+
+
+   
+
+
+ 
+        
+
+
+  
+
+  
+              
+
+
+
+
+
+
+
+                
+
+            
+            
+            
+                        
+        
+                        
+      
+  
+
+
+
+
+
+    
